@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link rel='stylesheet' type="text/css" href="http://static.jackon.me/bootstrap-3.3.5/css/bootstrap.min.css"></link>
+<link rel='stylesheet' type="text/css" href="http://static.jackon.me/Font-Awesome-4.4.0/css/font-awesome.min.css"></link>
+
+<!--[if lt IE 9]>
+<![endif]-->
+</head>
+
+
+<style>
+.glyphicon{
+top:0
+}
+form{
+width:40%;
+margin:auto;
+margin-top:100px;
+padding:20px;
+border:1px solid #ccc;
+border-radius:10px;
+box-shadow:inset 0px 1px 1px rgba(0,0,0,0.4);
+background-color: #5bc0de;
+}
+.input-group{
+margin-top:30px
+}
+</style>
+
+
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+            Brand Logo
+
+        </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/admin/">Admin</a></li>
+
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            
+                <li> <a href="/accounts/signin/">Sign In</a> </li>
+                <li> <a href="/accounts/signup/">Sign Up</a> </li>
+            
+        </ul>
+    </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <div class="container">
+        
+    <form  method="post">
+    <input type='hidden' name='csrfmiddlewaretoken' value='g0W2yoljSd8hDF1g5zQFGR8x9GH2kqwC' />
+    
+    
+    <legend>Sign in</legend>
+   
+    <p>
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+        <input  type="text" class="form-control" id="id_identification" name="identification" placeholder="Email" />
+    </div>
+    </p>
+    
+    <p>
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+        <input type="password" class="form-control" id="id_password" name="password" placeholder="password" />
+    </div>
+    </p>
+    
+    <p class="checkbox">
+    <label for="id_remember_me">
+    <input type="checkbox" id="id_remember_me" name="remember_me" /> Remember me for a month</label>
+    </p>
+    
+    <button type="button" class="btn btn-primary btn-block"> sign in </button>
+    <p class="forgot-password">
+    <a href="/accounts/password/reset/" title="Forgot your password?">Forgot your password?</a></p>
+  
+    </form>
+
+    </div>
+
+
+    <script src="http://static.jackon.me/jquery-1.11.3/jquery-1.11.3.min.js"></script>
+    <script src="http://static.jackon.me/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
